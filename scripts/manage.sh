@@ -20,9 +20,9 @@ bbrUrl='https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh'
 get_region() {
     country=$( curl -4 "https://ipinfo.io/country" 2> /dev/null )
     if [ "$country" == "CN" ]; then
-      downloadUrl="https://ghproxy.com/${downloadUrl}"
-      manageUrl="https://ghproxy.com/${manageUrl}"
-      bbrUrl="https://ghproxy.com/${bbrUrl}"
+      downloadUrl="https://gh-proxy.com/${downloadUrl}"
+      manageUrl="https://gh-proxy.com/${manageUrl}"
+      bbrUrl="https://gh-proxy.com/${bbrUrl}"
     fi
 }
 get_arch(){
